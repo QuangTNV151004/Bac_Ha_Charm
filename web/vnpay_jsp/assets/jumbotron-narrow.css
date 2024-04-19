@@ -1,0 +1,92 @@
+/* Improve overall padding and spacing */
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f8f9fa; /* Light grey background for a subtle look */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Modern font */
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #ffffff; /* White background for content */
+    border-radius: 8px; /* Rounded corners for container */
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Subtle shadow for depth */
+    margin-top: 20px; /* Add some top margin for breathing room */
+}
+
+/* Enhance header and footer with better spacing and lines */
+.header, .footer {
+    padding: 20px 0;
+    color: #6c757d; /* Dark grey color for text */
+    border-bottom: 2px solid #eee; /* Slightly thicker and lighter line */
+}
+
+.footer {
+    border-top: 2px solid #eee;
+    text-align: center;
+    color: #6c757d;
+}
+
+/* Custom page header */
+.header h3 {
+    color: #007bff; /* Bootstrap primary color for consistency */
+}
+
+/* Button enhancements */
+.jumbotron .btn {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 20px; /* Rounded button edges */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text */
+    box-shadow: 0 2px 4px rgba(0,0,0,.2); /* Button shadow for depth */
+}
+
+/* Form control adjustments for better appearance */
+.form-control {
+    border-radius: 4px; /* Slightly rounded edges for form inputs */
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075); /* Inner shadow for depth */
+}
+
+/* Payment method selection improvements */
+input[type="radio"] + label {
+    margin-right: 15px; /* Space out radio buttons */
+    cursor: pointer; /* Cursor pointer to indicate clickable */
+}
+
+/* Enhance footer */
+.footer p {
+    margin-bottom: 0; /* Remove bottom margin for cleaner look */
+}
+
+/* Adjust responsive settings for better mobile experience */
+@media (min-width: 768px) {
+    .container {
+        max-width: 730px; /* Narrower container for wider screens */
+    }
+}
+
+/* Payment status colors for better visual feedback */
+.pay-success {
+    color: #28a745; /* Bootstrap success green */
+}
+
+.pay-unsuccess {
+    color: #6c757d; /* Use dark grey for neutral feedback */
+}
+
+.pay-error {
+    color: #dc3545; /* Bootstrap danger red for errors */
+}
+
+/* Enhancements for pager for better visibility */
+.pager .current {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff;
+}
+
+.pager a {
+    color: #007bff; /* Bootstrap primary link color */
+    background-color: #f8f9fa; /* Light grey background */
+}

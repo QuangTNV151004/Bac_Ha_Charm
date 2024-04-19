@@ -1,0 +1,362 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-out;
+}
+
+.frontpage_room {
+    position: relative;
+    background: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/261028842.jpg?k=03e21f093e6a597bfb8c1211782d86d7a17ce98fb64c03b3f4ac43d782d16579&o=&hp=1) no-repeat;
+    background-size: cover;
+}
+.frontpage_room::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.10);
+}
+
+#logo1 {
+    display: flex;
+    position: absolute;
+    height: 100px;
+    left: 1.25rem;
+    padding-top: 20px;
+}
+
+.navbar {
+    padding-top: 14.5px;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 12px;
+}
+
+.navbar #navbarmain li a {
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.navbar #navbarmain li a:hover {
+    color: #8d0003;
+    font-size: 17px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+.social {
+    display: inline-block;
+    position: absolute;
+    right: 1.25rem;
+}
+
+.social img {
+    margin-right: 8px;
+    margin-left: 4px;
+}
+
+.social li {
+    height: 30px;
+}
+
+.social #fb,
+#ig {
+    height: 22px;
+    opacity: 0.75;
+    margin-top: 3px;
+}
+
+.social #lnkd {
+    height: 24px;
+    opacity: 0.75;
+    margin-top: 3px;
+}
+
+.social #git {
+    height: 35px;
+    padding-bottom: 5px;
+    opacity: 0.75;
+}
+
+a img:hover {
+    cursor: pointer;
+    filter: invert();
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 715px;
+    font-size: 60px;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 495px;
+    font-weight: bolder;
+    color: #ffff;
+    align-items: center;
+    justify-content: center;
+}
+
+#contentsum1 {
+    color: #ffff;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 12px;
+    font-weight: bolder;
+}
+
+
+.room-booking-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align the items horizontally */
+    flex-wrap: wrap;
+    justify-content: center; /* Center-align the items vertically for multiple lines */
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+.available-rooms {
+    text-align: center; /* Center-align text for the 'Available Room Types' heading */
+    width: 100%; /* Ensure the heading spans the full width of its container */
+}
+
+.room-selection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.room-details {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #e6e6e6; /* Add border */
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add shadow */
+    border-radius: 8px; /* Round corners */
+    overflow: hidden; /* Ensures the child elements adhere to the border-radius */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+.room-image img {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    width: 100%; /* Ensure the image covers the width */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #e6e6e6; /* Separate image from content */
+}
+
+.room-description {
+    padding: 1rem 0;
+    padding: 15px; /* Add more padding */
+    background-color: #f9f9f9; /* Slight grey background */
+}
+
+.room-description h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem; /* Adjust font size */
+    color: #333; /* Darker font color */
+}
+
+.room-description p {
+    font-size: 0.9rem;
+    color: #666;
+    color: #666; /* Lighter font color */
+}
+
+.more-info-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+.booking-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-top: 0; /* Remove margin top */
+}
+
+.select-room-btn,
+.book-now-btn {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+    padding: 10px 15px; /* Increase padding */
+    margin: 0 5px; /* Add margin between buttons */
+    font-size: 0.9rem; /* Adjust font size */
+    text-transform: uppercase; /* Capitalize text */
+    font-weight: bold; /* Make text bold */
+}
+
+.select-room-btn {
+    background-color: #5cb85c;
+}
+
+.book-now-btn {
+    background-color: #0275d8;
+}
+
+.select-room-btn:hover {
+    background-color: #4cae4c; /* Green */
+    color: #fff; /* White text */
+
+}
+
+.book-now-btn:hover {
+    background-color: #0056b3; /* Blue */
+    color: #fff; /* White text */
+}
+.price-discount {
+    padding: 15px; /* Add padding */
+    background-color: #fff; /* White background */
+    display: flex;
+    justify-content: space-between; /* Space out price and buttons */
+    align-items: center;
+}
+.offer-price {
+    color: #d9534f;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-size: 1rem; /* Adjust the offer price font size */
+    color: #d9534f; /* Offer price color */
+    font-weight: normal;
+}
+.selected {
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: #ffffff;
+    max-width: 600px;
+}
+
+.selected h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+#selected-rooms {
+    margin-top: 10px;
+}
+
+.room-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f6f6f6;
+    border-radius: 6px;
+}
+
+.room-item button {
+    padding: 6px 12px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.room-item button:hover {
+    background-color: #c9302c;
+}
+
+.total-price {
+    font-weight: 600;
+    font-size: 18px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+/* Style for the Book button in the selection rooms section */
+.book-now-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.book-now-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.book-now-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0,123,255,.25);
+}
+
+
+@media screen and (max-width: 768px) {
+    .room-selection {
+        flex-direction: column;
+    }
+
+    .room-details,
+    .booking-details {
+        width: 100%;
+    }
+    .room-selection {
+        flex-direction: column;
+    }
+
+    .room-details {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .price-discount,
+    .booking-buttons {
+        flex-direction: column; /* Stack on top of each other */
+    }
+
+    .booking-buttons button {
+        width: 100%; /* Full width buttons */
+        margin-bottom: 10px; /* Add space between buttons */
+    }
+}
+
+
+
